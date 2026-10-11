@@ -151,9 +151,6 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .list b{color:var(--green)}
 
 /* ---------- Hoteles ---------- */
-.copy{border:0;background:#fff;border-radius:999px;padding:8px 14px;font:600 12px var(--sans);color:var(--green);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.05);display:inline-flex;align-items:center;gap:6px}
-.copy.dark{background:var(--green);color:#fff;letter-spacing:.08em}
-.copy .ms{font-size:16px}
 .hotel{padding:18px 16px 14px;margin-bottom:14px}
 .hotel-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .hotel h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:19px;line-height:1.25}
@@ -167,9 +164,8 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .gift > p{color:var(--text);margin-bottom:12px}
 .gift .italic{font-style:italic;font-size:13px;color:var(--muted);margin-bottom:20px}
 .pay{background:#fff;border-radius:18px;padding:16px;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.04);margin-bottom:14px}
-.pay small{display:block;font-size:10px;letter-spacing:.16em;color:var(--rose);font-weight:600;margin-bottom:8px}
-.iban{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:10px 12px;font-weight:600;font-size:13px;letter-spacing:.03em;color:var(--green);margin-bottom:8px}
-.pay .holders{font-size:12px;color:var(--muted)}
+.iban{text-align:center;background:var(--soft);border-radius:12px;padding:10px 12px;font-weight:600;font-size:13px;letter-spacing:.03em;color:var(--green);margin-bottom:8px}
+.pay .holders{font-size:12px;color:var(--muted);text-align:center}
 .round{width:42px;height:42px;border-radius:50%;border:0;display:grid;place-items:center;background:#ece7df;color:var(--green);cursor:pointer;text-decoration:none;flex:0 0 42px}
 .round.dark{background:var(--green);color:#fff}
 
@@ -374,11 +370,9 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
       <p>El mejor regalo que podéis hacernos es contar con vuestra presencia, sonrisas y bailes en este día.</p>
       <p class="italic">No obstante, si deseáis colaborar con una aportación para nuestra luna de miel y nuevo hogar juntos, os facilitamos los siguientes datos con todo nuestro agradecimiento:</p>
       <div class="pay">
-        <small>TRANSFERENCIA BANCARIA</small>
         <!-- PENDIENTE: poner vuestro IBAN real -->
-        <div class="iban"><span id="iban">ES84 2100 0418 4502 0005 6789</span>
-          <button class="copy dark" data-copy-from="iban"><span class="ms">content_copy</span>COPIAR</button></div>
-        <p class="holders">Titulares: Ana Navarro &amp; Santiago Serrano</p>
+        <div class="iban">ES84 2100 0418 4502 0005 6789</div>
+        <p class="holders">Titulares: Ana Alconchel &amp; Santiago Latorre</p>
       </div>
     </div>
   </section>
@@ -443,17 +437,9 @@ tabs.forEach(function(t){
   });
 });
 
-// Copiar al portapapeles
+// Aviso flotante
 var toast = document.getElementById('toast'), tt;
 function showToast(msg){ toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove('show'); },1600); }
-document.querySelectorAll('[data-copy],[data-copy-from]').forEach(function(b){
-  b.addEventListener('click', function(){
-    var txt = b.dataset.copy || document.getElementById(b.dataset.copyFrom).textContent.replace(/\s/g,'');
-    var done = function(){ showToast('¡Copiado!'); };
-    if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(done, function(){ showToast(txt); }); }
-    else { showToast(txt); }
-  });
-});
 
 // Si el formulario aún no está enlazado, avisa en vez de abrir una pestaña vacía
 document.getElementById('rsvpBtn').addEventListener('click', function(e){
