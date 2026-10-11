@@ -183,12 +183,9 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .round.dark{background:var(--green);color:#fff}
 
 /* ---------- Contacto ---------- */
-.contact{display:flex;align-items:center;gap:14px;padding:14px;margin-bottom:12px}
-.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:18px;color:var(--green);flex:0 0 44px}
-.contact .who{flex:1}
-.contact h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:18px}
-.contact p{font-size:12px;color:var(--muted)}
-.contact .actions{display:flex;gap:8px}
+.contact-text{text-align:center;font-style:italic;color:var(--muted);max-width:340px;margin:0 auto 18px}
+.contact-list{list-style:none;text-align:center;display:grid;gap:10px;font-size:16px;color:var(--text)}
+.contact-list a{text-decoration:none}
 
 /* ---------- Pie ---------- */
 footer{text-align:center;padding:40px 0 60px}
@@ -398,7 +395,6 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   <!-- 8 · NUESTRO MAYOR REGALO -->
   <section id="regalo" data-title="Regalo" style="padding-top:24px">
     <div class="card gift reveal">
-      <div class="circle" style="background:var(--rose-soft);color:var(--rose)"><span class="ms">flight_takeoff</span></div>
       <h2 style="margin-top:0">Nuestro Mayor Regalo</h2>
       <p>El mejor regalo que podéis hacernos es contar con vuestra presencia, sonrisas y bailes en este día.</p>
       <p class="italic">No obstante, si deseáis colaborar con una aportación para nuestra luna de miel y nuevo hogar juntos, os facilitamos los siguientes datos con todo nuestro agradecimiento:</p>
@@ -420,23 +416,11 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   <section id="contacto" data-title="Contacto">
     <p class="eyebrow"><span class="ms">support_agent</span>Estamos aquí</p>
     <h2>¿Dudas o Consultas?</h2>
-    <p class="lead">Si tenéis cualquier consulta sobre intolerancias alimentarias, horarios o traslados, no dudéis en contactarnos:</p>
-    <div class="card contact reveal">
-      <span class="avatar" style="background:var(--rose-soft)">A</span>
-      <div class="who"><h3>Ana (La Novia)</h3><p>+34 654 112 233</p></div>
-      <div class="actions">
-        <a class="round" href="tel:+34654112233" aria-label="Llamar a Ana"><span class="ms">call</span></a>
-        <a class="round dark" href="https://wa.me/34654112233" target="_blank" rel="noopener" aria-label="WhatsApp a Ana"><span class="ms">chat</span></a>
-      </div>
-    </div>
-    <div class="card contact reveal">
-      <span class="avatar" style="background:var(--mint)">S</span>
-      <div class="who"><h3>Santiago (El Novio)</h3><p>+34 654 321 987</p></div>
-      <div class="actions">
-        <a class="round" href="tel:+34654321987" aria-label="Llamar a Santiago"><span class="ms">call</span></a>
-        <a class="round dark" href="https://wa.me/34654321987" target="_blank" rel="noopener" aria-label="WhatsApp a Santiago"><span class="ms">chat</span></a>
-      </div>
-    </div>
+    <p class="contact-text">Si tienes cualquier duda o consulta, no dudes en contactarnos.</p>
+    <ul class="contact-list">
+      <li>Lourdes: <a href="tel:+34690659478">690 659 478</a></li>
+      <li>Xabier: <a href="tel:+34626800323">626 800 323</a></li>
+    </ul>
   </section>
 
   <footer>
