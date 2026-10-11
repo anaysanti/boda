@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ana &amp; Santiago · 01·05·2027</title>
+<meta name="description" content="Boda de Ana y Santiago · 1 de mayo de 2027 · Palacio de Aldovea">
+<meta property="og:title" content="Ana & Santiago · ¡Nos casamos!">
+<meta property="og:description" content="1 de mayo de 2027 · Palacio de Aldovea">
+<meta property="og:image" content="img/pareja.webp">
+<meta name="theme-color" content="#faf7f2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f2; --card:#ffffff; --soft:#f3efe9; --line:#e7e1d8;
+  --green:#2f4a3e; --green-2:#3d5c4e; --rose:#8a5248; --rose-soft:#fde8e6;
+  --mint:#d4ecdf; --sand:#fcebd6; --text:#3a3a37; --muted:#6f6b65;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+  --radius:22px; --shadow:0 10px 30px rgba(47,74,62,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.ms{font-family:'Material Symbols Rounded';font-weight:normal;font-style:normal;font-size:20px;line-height:1;display:inline-block;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';vertical-align:middle}
+.wrap{max-width:480px;margin:0 auto;padding:0 16px}
+
+/* ---------- Cabecera + menú ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.scrolled{border-color:var(--line)}
+.bar{max-width:480px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--green);display:grid;place-items:center;cursor:pointer}
+.icon-btn .ms{font-size:26px}
+.bar-title{font-family:var(--serif);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-size:17px;transition:opacity .2s}
+.mono{width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:14px;letter-spacing:.04em;text-decoration:none}
+nav.menu{position:fixed;inset:60px 0 auto 0;z-index:49;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.22s ease}
+nav.menu.open{transform:none;opacity:1;pointer-events:auto}
+nav.menu ul{list-style:none;max-width:480px;margin:0 auto;padding:8px 16px 16px}
+nav.menu a{display:flex;align-items:center;gap:12px;padding:12px 6px;text-decoration:none;color:var(--green);font-weight:500;border-bottom:1px solid var(--line)}
+nav.menu li:last-child a{border:0}
+nav.menu .ms{color:var(--rose)}
+
+/* ---------- Comunes ---------- */
+section{padding:44px 0 8px}
+.eyebrow{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--rose);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow .ms{font-size:18px}
+h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center;font-size:30px;line-height:1.2;margin:8px 0 6px}
+.lead{text-align:center;color:var(--muted);font-size:13px;max-width:330px;margin:0 auto 22px}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 12px;font-size:11px;font-weight:600;letter-spacing:.08em}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:999px;background:var(--green);color:#fff;padding:18px 20px;font:600 14px var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;box-shadow:0 8px 20px rgba(47,74,62,.25);transition:transform .15s,background .15s}
+.btn:active{transform:scale(.98)}
+.btn:hover{background:var(--green-2)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Portada ---------- */
+#portada{padding-top:16px;text-align:center}
+.hero-tag{background:var(--soft);color:var(--green)}
+.hero-tag .ms{font-size:16px;font-variation-settings:'FILL' 1}
+.hero{position:relative;margin:14px 0 26px;border-radius:30px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 18px 40px rgba(47,74,62,.18)}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero .badge-ico{position:absolute;top:14px;left:14px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.88);display:grid;place-items:center;color:var(--green)}
+.hero .badge-ico .ms{font-size:18px}
+.hero .date{position:absolute;right:12px;bottom:12px;background:rgba(255,255,255,.88);color:var(--rose);font-size:11px;font-weight:600;letter-spacing:.12em}
+.kicker{color:var(--rose);font-size:13px;font-weight:600;letter-spacing:.2em}
+.names{font-family:var(--serif);font-weight:400;color:var(--green);font-size:42px;line-height:1.15;margin:6px 0 4px}
+.divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--rose);margin-bottom:14px}
+.divider::before,.divider::after{content:"";width:70px;height:1px;background:var(--line)}
+.hero-text{color:var(--text);max-width:310px;margin:0 auto}
+
+/* ---------- Save the date ---------- */
+.std{padding:28px 20px 22px;text-align:center}
+.std svg{margin:0 auto 6px}
+.std .label{color:var(--rose);font-size:12px;font-weight:600;letter-spacing:.22em}
+.std .big{font-family:var(--serif);color:var(--green);font-size:30px;letter-spacing:.06em;margin:4px 0}
+.std .sub{color:var(--rose);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
+.countdown div{background:var(--soft);border-radius:14px;padding:12px 0 10px}
+.countdown b{display:block;font-family:var(--serif);font-weight:500;color:var(--green);font-size:20px}
+.countdown div:last-child b{color:var(--rose)}
+.countdown span{font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.quote{background:var(--soft);border-radius:16px;padding:18px;font-style:italic;color:var(--text);line-height:1.6}
+
+/* ---------- Itinerario ---------- */
+.timeline{position:relative;padding-left:4px}
+.timeline::before{content:"";position:absolute;left:23px;top:20px;bottom:40px;width:2px;background:var(--line)}
+.step{display:flex;gap:14px;margin-bottom:22px;position:relative}
+.dot{flex:0 0 40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;background:var(--green);z-index:1;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+.step:nth-child(even) .dot{background:var(--rose)}
+.dot .ms{font-size:20px}
+.step .card{flex:1;padding:16px 16px 14px}
+.step h3{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--serif);font-weight:500;color:var(--green);font-size:19px;margin-bottom:4px}
+.time{background:var(--soft);color:var(--text);padding:3px 10px}
+.step:first-child .time{background:var(--rose-soft);color:var(--rose)}
+.step p{font-size:13px;color:var(--text)}
+
+/* ---------- Asistencia ---------- */
+.rsvp{padding:30px 20px 24px;text-align:center;background:linear-gradient(180deg,#f6f3ee,#fff)}
+.circle{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;margin:0 auto 14px}
+.circle .ms{font-size:24px}
+.rsvp h2{margin-top:0}
+.rsvp p{color:var(--muted);margin-bottom:18px}
+.deadline{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--rose-soft);color:var(--rose);border-radius:999px;padding:10px 16px;font-size:12px;font-weight:600;letter-spacing:.06em;margin-bottom:22px}
+.deadline .ms{font-size:18px}
+
+/* ---------- Escenario ---------- */
+.venue{overflow:hidden}
+.venue-photo{position:relative;aspect-ratio:16/10;background:var(--soft)}
+.venue-photo img{width:100%;height:100%;object-fit:cover}
+.venue-photo .pill{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);color:var(--text);letter-spacing:.04em;font-weight:500;padding:8px 14px}
+.venue-body{padding:20px 16px 18px}
+.addr{display:flex;gap:12px;margin-bottom:16px}
+.addr .ms{color:var(--rose);font-size:24px}
+.addr h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:20px}
+.addr p{font-size:13px;color:var(--muted)}
+.map{position:relative;border-radius:18px;overflow:hidden;height:190px;background:var(--soft)}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.75)}
+.map-bar{position:absolute;left:10px;right:10px;bottom:10px;background:#fff;border-radius:16px;padding:8px 8px 8px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;box-shadow:var(--shadow);font-size:12px}
+.map-bar .info{display:flex;align-items:center;gap:8px;color:var(--text)}
+.map-bar a{background:var(--green);color:#fff;text-decoration:none;border-radius:999px;padding:9px 14px;font-size:11px;font-weight:600;letter-spacing:.1em;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.map-bar a .ms{font-size:16px}
+.note{font-style:italic;font-size:12px;color:var(--muted);margin-top:14px}
+
+/* ---------- Transporte ---------- */
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);background:#ece7df;border-radius:999px;padding:4px;margin-bottom:16px}
+.tabs button{border:0;background:transparent;border-radius:999px;padding:10px 0;font:600 11px var(--sans);letter-spacing:.12em;color:var(--green);cursor:pointer;transition:.2s}
+.tabs button[aria-selected="true"]{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.panel{padding:20px 16px}
+.panel[hidden]{display:none}
+.panel h3{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:600;color:var(--green);font-size:20px;margin-bottom:8px}
+.panel h3 .ms{color:var(--rose)}
+.panel p{margin-bottom:10px}
+.warn{display:flex;gap:12px;background:#fdecea;border-radius:14px;padding:14px;font-size:13px;margin:12px 0}
+.warn .ms{color:#c0392b;font-size:22px}
+.foot-row{display:flex;justify-content:space-between;align-items:center;background:var(--soft);border-radius:12px;padding:10px 12px;font-size:12px}
+.foot-row span:first-child{display:flex;align-items:center;gap:6px}
+.foot-row .ms{font-size:16px}
+.foot-row b{color:var(--rose);font-size:11px;letter-spacing:.1em}
+.list{list-style:none}
+.list li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.list li:last-child{border:0}
+.list b{color:var(--green)}
+
+/* ---------- Hoteles ---------- */
+.code{display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(90deg,var(--sand),#fff4e8);border-radius:18px;padding:14px 16px;margin-bottom:16px}
+.code .l{display:flex;align-items:center;gap:12px}
+.code .ms{color:var(--rose);font-size:24px}
+.code small{display:block;font-size:10px;letter-spacing:.16em;color:var(--rose);font-weight:600}
+.code strong{font-family:var(--serif);font-weight:600;color:var(--green);font-size:20px;letter-spacing:.04em}
+.copy{border:0;background:#fff;border-radius:999px;padding:8px 14px;font:600 12px var(--sans);color:var(--green);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.05);display:inline-flex;align-items:center;gap:6px}
+.copy.dark{background:var(--green);color:#fff;letter-spacing:.08em}
+.copy .ms{font-size:16px}
+.hotel{padding:18px 16px 14px;margin-bottom:14px}
+.hotel-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.hotel h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:19px;line-height:1.25}
+.hotel .disc{background:#ece7df;color:var(--text);white-space:nowrap}
+.hotel .dist{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.hotel p{font-size:13px}
+.hotel a{display:flex;justify-content:flex-end;align-items:center;gap:4px;color:var(--rose);font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;margin-top:10px}
+.hotel a .ms{font-size:16px}
+
+/* ---------- Regalo ---------- */
+.gift{padding:30px 16px 20px;text-align:center;background:linear-gradient(180deg,#fff,#f6f3ee)}
+.gift > p{color:var(--text);margin-bottom:12px}
+.gift .italic{font-style:italic;font-size:13px;color:var(--muted);margin-bottom:20px}
+.pay{background:#fff;border-radius:18px;padding:16px;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.04);margin-bottom:14px}
+.pay small{display:block;font-size:10px;letter-spacing:.16em;color:var(--rose);font-weight:600;margin-bottom:8px}
+.iban{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:10px 12px;font-weight:600;font-size:13px;letter-spacing:.03em;color:var(--green);margin-bottom:8px}
+.pay .holders{font-size:12px;color:var(--muted)}
+.bizum{display:flex;justify-content:space-between;align-items:center}
+.bizum strong{font-family:var(--serif);font-weight:500;color:var(--green);font-size:20px;display:block}
+.bizum span{font-size:12px;color:var(--muted)}
+.round{width:42px;height:42px;border-radius:50%;border:0;display:grid;place-items:center;background:#ece7df;color:var(--green);cursor:pointer;text-decoration:none;flex:0 0 42px}
+.round.dark{background:var(--green);color:#fff}
+
+/* ---------- Contacto ---------- */
+.contact{display:flex;align-items:center;gap:14px;padding:14px;margin-bottom:12px}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:18px;color:var(--green);flex:0 0 44px}
+.contact .who{flex:1}
+.contact h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:18px}
+.contact p{font-size:12px;color:var(--muted)}
+.contact .actions{display:flex;gap:8px}
+
+/* ---------- Pie ---------- */
+footer{text-align:center;padding:40px 0 60px}
+.seal{width:84px;height:84px;margin:0 auto 14px}
+footer h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:20px}
+footer .d{color:var(--rose);font-size:11px;letter-spacing:.2em;margin:2px 0 14px}
+footer .love{display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;margin-bottom:14px}
+footer .love .ms{color:var(--rose);font-variation-settings:'FILL' 1;font-size:18px}
+footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--green);color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:60}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="bar">
+    <button class="icon-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span class="ms">menu</span></button>
+    <span class="bar-title" id="barTitle">Portada</span>
+    <a class="mono" href="#contacto" aria-label="Contacto">A·S</a>
+  </div>
+</header>
+
+<nav class="menu" id="menu" aria-label="Secciones">
+  <ul>
+    <li><a href="#portada"><span class="ms">favorite</span>Portada</a></li>
+    <li><a href="#save-the-date"><span class="ms">event</span>Save the date</a></li>
+    <li><a href="#itinerario"><span class="ms">schedule</span>Itinerario</a></li>
+    <li><a href="#asistencia"><span class="ms">mark_email_read</span>Confirmar asistencia</a></li>
+    <li><a href="#escenario"><span class="ms">castle</span>El escenario</a></li>
+    <li><a href="#como-llegar"><span class="ms">directions_bus</span>Cómo llegar</a></li>
+    <li><a href="#descanso"><span class="ms">bed</span>Descanso</a></li>
+    <li><a href="#regalo"><span class="ms">redeem</span>Nuestro mayor regalo</a></li>
+    <li><a href="#contacto"><span class="ms">support_agent</span>Dudas y contacto</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+  <!-- 1 · PORTADA -->
+  <section id="portada" data-title="Portada">
+    <span class="pill hero-tag"><span class="ms">favorite</span>NUESTRA BODA</span>
+    <div class="hero">
+      <!-- Foto provisional: sustituir img/pareja.webp por una vuestra (vertical, 3:4) -->
+      <img src="img/pareja.webp" alt="Ana y Santiago" fetchpriority="high">
+      <span class="badge-ico"><span class="ms">local_florist</span></span>
+      <span class="pill date">01 · MAYO · 2027</span>
+    </div>
+    <p class="kicker">¡NOS CASAMOS!</p>
+    <h1 class="names">Ana &amp; Santiago</h1>
+    <div class="divider"><span class="ms">all_inclusive</span></div>
+    <p class="hero-text">Acompáñanos a celebrar el amor, la vida y el comienzo de nuestra nueva historia.</p>
+  </section>
+
+  <!-- 2 · SAVE THE DATE -->
+  <section id="save-the-date" data-title="Save the date" style="padding-top:28px">
+    <div class="card std reveal">
+      <svg width="56" height="22" viewBox="0 0 56 22" fill="none" stroke="#3d5c4e" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+        <path d="M28 18C22 8 12 4 2 4"/><path d="M28 18C34 8 44 4 54 4"/><path d="M28 18v3"/>
+      </svg>
+      <p class="label">SAVE THE DATE</p>
+      <p class="big">01 · 05 · 2027</p>
+      <p class="sub">Sábado · Palacio de Aldovea</p>
+      <div class="countdown" aria-live="polite">
+        <div><b id="cd-d">–</b><span>Días</span></div>
+        <div><b id="cd-h">–</b><span>Horas</span></div>
+        <div><b id="cd-m">–</b><span>Min</span></div>
+        <div><b id="cd-s">–</b><span>Seg</span></div>
+      </div>
+      <p class="quote">“Querida familia y amigos, estamos felices de compartir con vosotros este nuevo capítulo. En esta web encontraréis todos los detalles, horarios y recomendaciones para celebrar juntos nuestro gran día.”</p>
+    </div>
+  </section>
+
+  <!-- 3 · ITINERARIO -->
+  <section id="itinerario" data-title="Itinerario">
+    <p class="eyebrow"><span class="ms">schedule</span>Itinerario</p>
+    <h2>El Día de la Boda</h2>
+    <p class="lead">Horarios previstos para disfrutar cada momento</p>
+    <div class="timeline">
+      <div class="step reveal">
+        <span class="dot"><span class="ms">diamond</span></span>
+        <div class="card"><h3>Ceremonia Civil <span class="pill time">13:00</span></h3>
+          <p>Jardín de los Arcos. Por favor, rogamos llegar 15 minutos antes para acomodarse.</p></div>
+      </div>
+      <div class="step reveal">
+        <span class="dot"><span class="ms">wine_bar</span></span>
+        <div class="card"><h3>Cóctel &amp; Aperitivo <span class="pill time">14:00</span></h3>
+          <p>Música en acústico al aire libre, cortador de jamón y brindis de bienvenida.</p></div>
+      </div>
+      <div class="step reveal">
+        <span class="dot"><span class="ms">restaurant</span></span>
+        <div class="card"><h3>Banquete Nupcial <span class="pill time">16:00</span></h3>
+          <p>Salón de Cristal. Menú degustación de temporada y sorpresas especiales.</p></div>
+      </div>
+      <div class="step reveal">
+        <span class="dot"><span class="ms">nightlife</span></span>
+        <div class="card"><h3>Baile &amp; Fiesta <span class="pill time">18:30</span></h3>
+          <p>Barra libre, DJ en directo, recena de medianoche y fin de fiesta a las 00:30.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · CONFIRMAR ASISTENCIA -->
+  <section id="asistencia" data-title="Asistencia" style="padding-top:20px">
+    <div class="card rsvp reveal">
+      <div class="circle" style="background:var(--mint);color:var(--green)"><span class="ms">mark_email_read</span></div>
+      <h2>Confirma tu Asistencia</h2>
+      <p>Nos facilitará enormemente la organización del evento saber si podrás acompañarnos.</p>
+      <div class="deadline"><span class="ms">event_available</span>Confirmar antes del 15 de marzo de 2027</div>
+      <!-- PENDIENTE: pegar aquí el enlace del Google Form (botón «Enviar» → icono de enlace) -->
+      <a class="btn" id="rsvpBtn" href="#" target="_blank" rel="noopener">Completar formulario <span class="ms">arrow_forward</span></a>
+    </div>
+  </section>
+
+  <!-- 5 · EL ESCENARIO -->
+  <section id="escenario" data-title="El escenario">
+    <p class="eyebrow"><span class="ms">castle</span>El escenario</p>
+    <h2>Palacio de Aldovea</h2>
+    <p class="lead">Donde celebraremos tanto la ceremonia como el banquete</p>
+    <div class="card venue reveal">
+      <div class="venue-photo">
+        <!-- Foto provisional: sustituir img/aldovea.webp por una foto del palacio -->
+        <img src="img/aldovea.webp" alt="Palacio de Aldovea" loading="lazy">
+        <span class="pill">Finca Histórica del S. XVIII</span>
+      </div>
+      <div class="venue-body">
+        <div class="addr"><span class="ms">location_on</span>
+          <div><h3>Finca Aldovea</h3>
+          <p>Carretera de San Fernando a Mejorada, km 3,8, 28830 San Fernando de Henares (Madrid)</p></div>
+        </div>
+        <div class="map">
+          <iframe title="Mapa del Palacio de Aldovea" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Palacio%20de%20Aldovea%2C%20San%20Fernando%20de%20Henares&z=13&output=embed"></iframe>
+          <div class="map-bar">
+            <span class="info"><span class="ms">directions_car</span>A 20 min de Madrid Centro</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Palacio+de+Aldovea+San+Fernando+de+Henares" target="_blank" rel="noopener">Abrir en Maps <span class="ms">open_in_new</span></a>
+          </div>
+        </div>
+        <p class="note">*Disponemos de amplio parking privado y vigilado gratuito para todos los invitados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · CÓMO LLEGAR -->
+  <section id="como-llegar" data-title="Cómo llegar">
+    <p class="eyebrow"><span class="ms">directions_bus</span>Cómo llegar</p>
+    <h2>Transporte y Accesos</h2>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="t-bus" id="tb-bus">AUTOBUSES</button>
+      <button role="tab" aria-selected="false" aria-controls="t-car" id="tb-car">EN COCHE</button>
+      <button role="tab" aria-selected="false" aria-controls="t-back" id="tb-back">REGRESO</button>
+    </div>
+    <div class="card panel" id="t-bus" role="tabpanel" aria-labelledby="tb-bus">
+      <h3><span class="ms">directions_bus</span>Autobús de Ida</h3>
+      <p>Salida a las <b>11:45 h</b> desde el centro de Madrid (Plaza de Neptuno / Paseo del Prado).</p>
+      <div class="warn"><span class="ms">warning</span>
+        <div><b>Rogamos máxima puntualidad y celeridad:</b> los autobuses tienen parada regulada de corto tiempo y no pueden esperar estacionados en la vía pública.</div></div>
+      <div class="foot-row"><span><span class="ms">schedule</span>Llegada a Aldovea: 12:35 h aprox.</span><b>INCLUIDO</b></div>
+    </div>
+    <div class="card panel" id="t-car" role="tabpanel" aria-labelledby="tb-car" hidden>
+      <h3><span class="ms">directions_car</span>En Coche</h3>
+      <p>Desde Madrid, toma la <b>A-2</b> dirección Barcelona y sal hacia San Fernando de Henares; sigue la carretera hacia Mejorada del Campo hasta el km 3,8.</p>
+      <p>La finca dispone de <b>parking privado, vigilado y gratuito</b> para todos los invitados.</p>
+      <div class="foot-row"><span><span class="ms">timer</span>Unos 20 min desde Madrid Centro</span><b>GRATIS</b></div>
+    </div>
+    <div class="card panel" id="t-back" role="tabpanel" aria-labelledby="tb-back" hidden>
+      <h3><span class="ms">u_turn_left</span>Autobuses de Vuelta</h3>
+      <p>Habrá varios turnos de regreso al punto de salida (Plaza de Neptuno):</p>
+      <ul class="list">
+        <li><span>Primer turno</span><b>21:00 h</b></li>
+        <li><span>Segundo turno</span><b>23:30 h</b></li>
+        <li><span>Fin de fiesta</span><b>00:45 h</b></li>
+      </ul>
+      <p style="margin-top:10px;font-size:13px;color:var(--muted)">Si vienes en coche, recuerda: si bebes, no conduzcas. ¡Usa el autobús!</p>
+    </div>
+  </section>
+
+  <!-- 7 · DESCANSO -->
+  <section id="descanso" data-title="Descanso">
+    <p class="eyebrow"><span class="ms">bed</span>Descanso</p>
+    <h2>Hoteles Recomendados</h2>
+    <p class="lead">Con tarifas especiales reservando con nuestro código</p>
+    <div class="code reveal">
+      <div class="l"><span class="ms">sell</span><div><small>CÓDIGO DE BODA</small><strong>BODAAS2027</strong></div></div>
+      <button class="copy" data-copy="BODAAS2027">Copiar</button>
+    </div>
+    <article class="card hotel reveal">
+      <div class="hotel-top"><h3>Hotel Axor Feria 4*</h3><span class="pill disc">-15% dto.</span></div>
+      <p class="dist">A 12 minutos del Palacio de Aldovea</p>
+      <p>Piscina de verano, traslados y desayuno buffet incluido con la reserva de grupo.</p>
+      <a href="#" target="_blank" rel="noopener">Ver tarifa y reservar <span class="ms">arrow_forward</span></a>
+    </article>
+    <article class="card hotel reveal">
+      <div class="hotel-top"><h3>Parador de Alcalá 4*</h3><span class="pill disc">-10% dto.</span></div>
+      <p class="dist">A 15 minutos (Alcalá de Henares centro)</p>
+      <p>Edificio histórico del siglo XVII con spa termal, ideal para alargar el fin de semana.</p>
+      <a href="#" target="_blank" rel="noopener">Ver tarifa y reservar <span class="ms">arrow_forward</span></a>
+    </article>
+    <article class="card hotel reveal">
+      <div class="hotel-top"><h3>NH Madrid Barajas Airport 3*</h3><span class="pill disc">-12% dto.</span></div>
+      <p class="dist">A 14 minutos (conexión rápida con M-40)</p>
+      <p>Práctico, moderno y con opción de late check-out hasta las 14:00 previa solicitud.</p>
+      <a href="#" target="_blank" rel="noopener">Ver tarifa y reservar <span class="ms">arrow_forward</span></a>
+    </article>
+  </section>
+
+  <!-- 8 · NUESTRO MAYOR REGALO -->
+  <section id="regalo" data-title="Regalo" style="padding-top:24px">
+    <div class="card gift reveal">
+      <div class="circle" style="background:var(--rose-soft);color:var(--rose)"><span class="ms">flight_takeoff</span></div>
+      <h2 style="margin-top:0">Nuestro Mayor Regalo</h2>
+      <p>El mejor regalo que podéis hacernos es contar con vuestra presencia, sonrisas y bailes en este día.</p>
+      <p class="italic">No obstante, si deseáis colaborar con una aportación para nuestra luna de miel y nuevo hogar juntos, os facilitamos los siguientes datos con todo nuestro agradecimiento:</p>
+      <div class="pay">
+        <small>TRANSFERENCIA BANCARIA</small>
+        <!-- PENDIENTE: poner vuestro IBAN real -->
+        <div class="iban"><span id="iban">ES84 2100 0418 4502 0005 6789</span>
+          <button class="copy dark" data-copy-from="iban"><span class="ms">content_copy</span>COPIAR</button></div>
+        <p class="holders">Titulares: Ana Navarro &amp; Santiago Serrano</p>
+      </div>
+      <div class="pay bizum">
+        <div><small>ENVÍO POR BIZUM</small><strong>+34 654 321 987</strong><span>Concepto: “Boda AS + Tu Nombre”</span></div>
+        <button class="round" data-copy="654321987" aria-label="Copiar teléfono de Bizum"><span class="ms">content_copy</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · DUDAS Y CONTACTO -->
+  <section id="contacto" data-title="Contacto">
+    <p class="eyebrow"><span class="ms">support_agent</span>Estamos aquí</p>
+    <h2>¿Dudas o Consultas?</h2>
+    <p class="lead">Si tenéis cualquier consulta sobre intolerancias alimentarias, horarios o traslados, no dudéis en contactarnos:</p>
+    <div class="card contact reveal">
+      <span class="avatar" style="background:var(--rose-soft)">A</span>
+      <div class="who"><h3>Ana (La Novia)</h3><p>+34 654 112 233</p></div>
+      <div class="actions">
+        <a class="round" href="tel:+34654112233" aria-label="Llamar a Ana"><span class="ms">call</span></a>
+        <a class="round dark" href="https://wa.me/34654112233" target="_blank" rel="noopener" aria-label="WhatsApp a Ana"><span class="ms">chat</span></a>
+      </div>
+    </div>
+    <div class="card contact reveal">
+      <span class="avatar" style="background:var(--mint)">S</span>
+      <div class="who"><h3>Santiago (El Novio)</h3><p>+34 654 321 987</p></div>
+      <div class="actions">
+        <a class="round" href="tel:+34654321987" aria-label="Llamar a Santiago"><span class="ms">call</span></a>
+        <a class="round dark" href="https://wa.me/34654321987" target="_blank" rel="noopener" aria-label="WhatsApp a Santiago"><span class="ms">chat</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <svg class="seal" viewBox="0 0 84 84" aria-hidden="true">
+      <circle cx="42" cy="42" r="38" fill="none" stroke="#8a5248" stroke-width="1.2"/>
+      <g fill="#8a5248"><circle cx="42" cy="4" r="2.4"/><circle cx="75" cy="23" r="2.4"/><circle cx="75" cy="61" r="2.4"/><circle cx="9" cy="61" r="2.4"/><circle cx="9" cy="23" r="2.4"/></g>
+      <text x="42" y="51" text-anchor="middle" font-family="Playfair Display, serif" font-size="26" fill="#2f4a3e">AS</text>
+    </svg>
+    <h3>Ana &amp; Santiago</h3>
+    <p class="d">01 · 05 · 2027</p>
+    <p class="love">Con todo nuestro amor <span class="ms">favorite</span></p>
+    <p class="thanks">Gracias por ser parte fundamental de nuestras vidas. ¡Nos vemos muy pronto!</p>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status">Copiado</div>
+
+<script>
+// Cuenta atrás (13:00 hora de Madrid)
+(function(){
+  var target = new Date('2027-05-01T13:00:00+02:00').getTime();
+  var ids = ['cd-d','cd-h','cd-m','cd-s'].map(function(i){return document.getElementById(i)});
+  function tick(){
+    var diff = Math.max(0, target - Date.now());
+    var d = Math.floor(diff/864e5), h = Math.floor(diff/36e5)%24, m = Math.floor(diff/6e4)%60, s = Math.floor(diff/1e3)%60;
+    [d,h,m,s].forEach(function(v,i){ ids[i].textContent = i ? String(v).padStart(2,'0') : v; });
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+// Menú desplegable
+var menu = document.getElementById('menu'), btn = document.getElementById('menuBtn');
+function setMenu(open){ menu.classList.toggle('open',open); btn.setAttribute('aria-expanded',open); btn.firstElementChild.textContent = open ? 'close' : 'menu'; }
+btn.addEventListener('click', function(){ setMenu(!menu.classList.contains('open')); });
+menu.addEventListener('click', function(e){ if(e.target.closest('a')) setMenu(false); });
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') setMenu(false); });
+
+// Título de la barra según la sección visible + borde al hacer scroll
+var title = document.getElementById('barTitle'), header = document.getElementById('top');
+var secs = document.querySelectorAll('section[data-title]');
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){ if(en.isIntersecting) title.textContent = en.target.dataset.title; });
+},{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(function(s){ io.observe(s); });
+addEventListener('scroll', function(){ header.classList.toggle('scrolled', scrollY > 8); }, {passive:true});
+
+// Animación de aparición
+var rv = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); rv.unobserve(en.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){ rv.observe(el); });
+
+// Pestañas de transporte
+var tabs = document.querySelectorAll('[role="tab"]');
+tabs.forEach(function(t){
+  t.addEventListener('click', function(){
+    tabs.forEach(function(o){ o.setAttribute('aria-selected', o===t); document.getElementById(o.getAttribute('aria-controls')).hidden = o!==t; });
+  });
+});
+
+// Copiar al portapapeles
+var toast = document.getElementById('toast'), tt;
+function showToast(msg){ toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove('show'); },1600); }
+document.querySelectorAll('[data-copy],[data-copy-from]').forEach(function(b){
+  b.addEventListener('click', function(){
+    var txt = b.dataset.copy || document.getElementById(b.dataset.copyFrom).textContent.replace(/\s/g,'');
+    var done = function(){ showToast('¡Copiado!'); };
+    if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(done, function(){ showToast(txt); }); }
+    else { showToast(txt); }
+  });
+});
+
+// Si el formulario aún no está enlazado, avisa en vez de abrir una pestaña vacía
+document.getElementById('rsvpBtn').addEventListener('click', function(e){
+  if(this.getAttribute('href') === '#'){ e.preventDefault(); showToast('El formulario estará disponible muy pronto'); }
+});
+</script>
+</body>
+</html>
