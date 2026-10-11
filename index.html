@@ -131,7 +131,7 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .note{font-style:italic;font-size:12px;color:var(--muted);margin-top:14px}
 
 /* ---------- Transporte ---------- */
-.tabs{display:grid;grid-template-columns:repeat(3,1fr);background:#ece7df;border-radius:999px;padding:4px;margin-bottom:16px}
+.tabs{display:grid;grid-template-columns:repeat(2,1fr);background:#ece7df;border-radius:999px;padding:4px;margin-bottom:16px}
 .tabs button{border:0;background:transparent;border-radius:999px;padding:10px 0;font:600 11px var(--sans);letter-spacing:.12em;color:var(--green);cursor:pointer;transition:.2s}
 .tabs button[aria-selected="true"]{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06)}
 .panel{padding:20px 16px}
@@ -176,9 +176,6 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .pay small{display:block;font-size:10px;letter-spacing:.16em;color:var(--rose);font-weight:600;margin-bottom:8px}
 .iban{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:10px 12px;font-weight:600;font-size:13px;letter-spacing:.03em;color:var(--green);margin-bottom:8px}
 .pay .holders{font-size:12px;color:var(--muted)}
-.bizum{display:flex;justify-content:space-between;align-items:center}
-.bizum strong{font-family:var(--serif);font-weight:500;color:var(--green);font-size:20px;display:block}
-.bizum span{font-size:12px;color:var(--muted)}
 .round{width:42px;height:42px;border-radius:50%;border:0;display:grid;place-items:center;background:#ece7df;color:var(--green);cursor:pointer;text-decoration:none;flex:0 0 42px}
 .round.dark{background:var(--green);color:#fff}
 
@@ -336,7 +333,6 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
     <div class="tabs" role="tablist">
       <button role="tab" aria-selected="true" aria-controls="t-bus" id="tb-bus">AUTOBUSES</button>
       <button role="tab" aria-selected="false" aria-controls="t-car" id="tb-car">EN COCHE</button>
-      <button role="tab" aria-selected="false" aria-controls="t-back" id="tb-back">REGRESO</button>
     </div>
     <div class="card panel" id="t-bus" role="tabpanel" aria-labelledby="tb-bus">
       <h3><span class="ms">directions_bus</span>Autobús de Ida</h3>
@@ -349,17 +345,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
       <h3><span class="ms">directions_car</span>En Coche</h3>
       <p>Desde Madrid, toma la <b>A-2</b> dirección Barcelona y sal hacia San Fernando de Henares; sigue la carretera hacia Mejorada del Campo hasta el km 3,8.</p>
       <p>La finca dispone de <b>parking privado, vigilado y gratuito</b> para todos los invitados.</p>
-      <div class="foot-row"><span><span class="ms">timer</span>Unos 20 min desde Madrid Centro</span><b>GRATIS</b></div>
-    </div>
-    <div class="card panel" id="t-back" role="tabpanel" aria-labelledby="tb-back" hidden>
-      <h3><span class="ms">u_turn_left</span>Autobuses de Vuelta</h3>
-      <p>Habrá varios turnos de regreso al punto de salida (Plaza de Neptuno):</p>
-      <ul class="list">
-        <li><span>Primer turno</span><b>21:00 h</b></li>
-        <li><span>Segundo turno</span><b>23:30 h</b></li>
-        <li><span>Fin de fiesta</span><b>00:45 h</b></li>
-      </ul>
-      <p style="margin-top:10px;font-size:13px;color:var(--muted)">Si vienes en coche, recuerda: si bebes, no conduzcas. ¡Usa el autobús!</p>
+      <div class="foot-row"><span><span class="ms">timer</span>Unos 25 min desde Madrid Centro</span><b>GRATIS</b></div>
     </div>
   </section>
 
@@ -404,10 +390,6 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
         <div class="iban"><span id="iban">ES84 2100 0418 4502 0005 6789</span>
           <button class="copy dark" data-copy-from="iban"><span class="ms">content_copy</span>COPIAR</button></div>
         <p class="holders">Titulares: Ana Navarro &amp; Santiago Serrano</p>
-      </div>
-      <div class="pay bizum">
-        <div><small>ENVÍO POR BIZUM</small><strong>+34 654 321 987</strong><span>Concepto: “Boda AS + Tu Nombre”</span></div>
-        <button class="round" data-copy="654321987" aria-label="Copiar teléfono de Bizum"><span class="ms">content_copy</span></button>
       </div>
     </div>
   </section>
