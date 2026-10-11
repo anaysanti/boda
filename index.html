@@ -161,7 +161,8 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 /* ---------- Regalo ---------- */
 .gift{padding:30px 16px 20px;text-align:center;background:linear-gradient(180deg,#fff,#f6f3ee)}
 .gift > p{color:var(--text);margin-bottom:12px}
-.gift .italic{font-style:italic;font-size:13px;color:var(--muted);margin-bottom:20px}
+.gift .italic{font-style:italic;color:var(--muted)}
+.gift .italic:last-of-type{margin-bottom:20px}
 .pay{margin-bottom:14px}
 .iban{text-align:center;padding:4px 0;font-size:13px;letter-spacing:.03em;color:var(--green);margin-bottom:8px}
 .pay .holders{font-size:12px;color:var(--muted);text-align:center}
@@ -365,7 +366,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   <section id="regalo" data-title="Lista de bodas" style="padding-top:24px">
     <div class="card gift reveal">
       <h2 style="margin-top:0">Lista de Bodas</h2>
-      <p>Estamos muy felices de celebrar el inicio de esta nueva etapa rodeados de la gente que más queremos.</p>
+      <p class="italic">Estamos muy felices de celebrar el inicio de esta nueva etapa rodeados de la gente que más queremos.</p>
       <p class="italic">Si os apetece tener un detalle con nosotros, os dejamos nuestro número de cuenta:</p>
       <div class="pay">
         <!-- PENDIENTE: poner vuestro IBAN real -->
