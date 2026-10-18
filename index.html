@@ -460,7 +460,7 @@ document.getElementById('homeLink').addEventListener('click', function(e){
 (function(){
   var track = document.getElementById('slides'), bars = document.getElementById('bars'), count = document.getElementById('photoCount');
   var prev = document.getElementById('prevPhoto'), next = document.getElementById('nextPhoto');
-  var exts = ['.jpg','.jpeg','.JPG','.JPEG','.png','.webp'];
+  var exts = ['.webp','.jpg','.jpeg','.JPG','.JPEG','.png'];
   function slides(){ return track.querySelectorAll('img'); }
   function build(){
     var n = slides().length; bars.innerHTML = '';
