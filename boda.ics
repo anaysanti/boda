@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ana y Santiago//Boda//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:boda-ana-santiago-20270501@anaysantiwedding
+DTSTAMP:20261018T000000Z
+DTSTART:20270501T113000Z
+DTEND:20270501T223000Z
+SUMMARY:Boda de Ana y Santiago
+DESCRIPTION:¡Nos casamos! Ceremonia a las 13:30 en el Palacio de Aldovea.
+LOCATION:Palacio de Aldovea\, Carretera de San Fernando a Mejorada\, km 3\,8\, 28830 San Fernando de Henares (Madrid)
+END:VEVENT
+END:VCALENDAR

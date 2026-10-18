@@ -95,6 +95,11 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .std svg{margin:0 auto 6px}
 .std .label{color:var(--rose);font-size:12px;font-weight:600;letter-spacing:.22em}
 .std .big{font-family:var(--serif);color:var(--green);font-size:min(60px,12.5vw);line-height:1.15;letter-spacing:.02em;white-space:nowrap;margin:4px 0}
+.cal{margin-top:16px}
+.cal-label{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.cal-btns{display:flex;gap:10px}
+.cal-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 8px;border-radius:999px;border:1px solid var(--line);color:var(--green);font-size:13px;font-weight:500;text-decoration:none;background:#fff}
+.cal-btn .ms{font-size:18px;color:var(--rose)}
 .std .sub{color:var(--rose);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
 .countdown{margin-bottom:0}
 .countdown .divider{margin:0}
@@ -273,6 +278,13 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
         <b class="num" id="cd-d">–</b>
         <p class="post" id="cd-txt">días para celebrar juntos nuestro gran día</p>
         <div class="divider"><span class="pt"></span></div>
+      </div>
+      <div class="cal">
+        <p class="cal-label">Guárdalo en tu calendario</p>
+        <div class="cal-btns">
+          <a class="cal-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+de+Ana+y+Santiago&amp;dates=20270501T113000Z%2F20270501T223000Z&amp;details=%C2%A1Nos+casamos%21+Ceremonia+a+las+13%3A30+en+el+Palacio+de+Aldovea.&amp;location=Palacio+de+Aldovea%2C+Carretera+de+San+Fernando+a+Mejorada%2C+km+3%2C8%2C+28830+San+Fernando+de+Henares+%28Madrid%29" target="_blank" rel="noopener"><span class="ms">event</span>Google</a>
+          <a class="cal-btn" href="boda.ics" download="boda-ana-santiago.ics"><span class="ms">calendar_month</span>Apple / Outlook</a>
+        </div>
       </div>
     </div>
   </section>
