@@ -219,7 +219,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
 <header id="top">
   <div class="bar">
     <button class="icon-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span class="ms">menu</span></button>
-    <a class="mono" id="homeLink" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
+    <a class="mono home-link" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
   </div>
 </header>
 
@@ -432,7 +432,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   </section>
 
   <footer>
-    <div class="mono mono-lg" aria-hidden="true"><span class="m-a">A</span><span class="m-s">S</span><span class="m-amp">&amp;</span></div>
+    <a class="mono mono-lg home-link" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
     <h3>Ana <span class="amp">&amp;</span> Santiago</h3>
     <p class="d">01 · 05 · 2027</p>
     <p class="love">Con todo nuestro amor <span class="ms">favorite</span></p>
@@ -452,13 +452,13 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   if(days === 0){ document.querySelector('.countdown .pre').textContent = '¡Ha llegado'; document.getElementById('cd-d').textContent = 'el día'; document.getElementById('cd-txt').textContent = 'de celebrar juntos nuestro amor!'; }
 })();
 
-// El logo recarga la página desde arriba (sin #sección)
-document.getElementById('homeLink').addEventListener('click', function(e){
+// Los logos recargan la página desde arriba (sin #sección)
+document.querySelectorAll('.home-link').forEach(function(a){ a.addEventListener('click', function(e){
   e.preventDefault();
   if('scrollRestoration' in history) history.scrollRestoration = 'manual';
   scrollTo(0,0);
   location.replace(location.pathname + location.search);
-});
+}); });
 
 // Carrusel de fotos de la portada
 (function(){
