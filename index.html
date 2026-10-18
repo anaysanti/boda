@@ -68,6 +68,9 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .slides{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .slides::-webkit-scrollbar{display:none}
 .slides img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}
+.slide-fit{flex:0 0 100%;position:relative;height:100%;overflow:hidden;scroll-snap-align:center}
+.slide-fit .blur{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(20px) brightness(.85)}
+.slide-fit img{position:relative;object-fit:contain}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(transparent,rgba(0,0,0,.35));pointer-events:none}
 .hero .nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.75);color:var(--green);display:grid;place-items:center;cursor:pointer;z-index:2}
 .hero .nav[hidden]{display:none}
@@ -236,7 +239,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
       <div class="slides" id="slides" aria-label="Fotos de Ana y Santiago">
         <img data-base="img/IMG_atardecer2" alt="Ana y Santiago" fetchpriority="high">
         <img data-base="img/pareja" alt="Ana y Santiago" loading="lazy">
-        <img data-base="img/IMG_8947" alt="Ana y Santiago" loading="lazy">
+        <div class="slide-fit"><div class="blur"></div><img data-base="img/IMG_8947" alt="Ana y Santiago" loading="lazy"></div>
         <img data-base="img/IMG_5251" alt="Ana y Santiago" loading="lazy">
       </div>
       <span class="pill date">01 · MAYO · 2027</span>
@@ -464,7 +467,9 @@ document.getElementById('homeLink').addEventListener('click', function(e){
   // Prueba varias extensiones; si una foto no existe, se quita del carrusel
   slides().forEach(function(img){
     var k = 0, base = img.dataset.base;
-    img.onerror = function(){ k++; if(k < exts.length) img.src = base + exts[k]; else { img.remove(); build(); } };
+    img.onerror = function(){ k++; if(k < exts.length) img.src = base + exts[k]; else { (img.closest('.slide-fit') || img).remove(); build(); } };
+    // Fotos horizontales: se ven enteras sobre un fondo difuminado de la misma foto
+    img.onload = function(){ var w = img.closest('.slide-fit'); if(w) w.querySelector('.blur').style.backgroundImage = 'url("' + img.currentSrc + '")'; };
     img.src = base + exts[0];
   });
   track.addEventListener('scroll', function(){ requestAnimationFrame(update); }, {passive:true});
