@@ -64,7 +64,7 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 
 /* ---------- Portada ---------- */
 #portada{padding-top:16px;text-align:center}
-.hero{position:relative;margin:14px 0 26px;border-radius:30px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 18px 40px rgba(47,74,62,.18)}
+.hero{position:relative;margin:0 0 26px;border-radius:30px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 18px 40px rgba(47,74,62,.18)}
 .slides{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .slides::-webkit-scrollbar{display:none}
 .slides img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}
@@ -79,7 +79,7 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .bars span.on{background:#fff}
 .count{font-size:11px;font-weight:600;letter-spacing:.12em;white-space:nowrap}
 .hero .date{position:absolute;right:12px;top:12px;background:rgba(255,255,255,.88);color:var(--rose);font-size:11px;font-weight:600;letter-spacing:.12em}
-.kicker{color:var(--rose);font-size:13px;font-weight:600;letter-spacing:.2em}
+.kicker{color:var(--rose);font-size:13px;font-weight:600;letter-spacing:.2em;margin-bottom:14px}
 .names{font-family:var(--serif);font-weight:400;color:var(--green);font-size:42px;line-height:1.15;margin:6px 0 4px}
 .divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--rose);margin-bottom:14px}
 .divider::before,.divider::after{content:"";width:70px;height:1px;background:var(--line)}
@@ -226,7 +226,6 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
 
   <!-- 1 · PORTADA -->
   <section id="portada" data-title="Portada">
-    <p class="kicker">¡NOS CASAMOS!</p>
     <div class="hero">
       <!-- Fotos del carrusel, en orden. Subirlas a la carpeta img/ (en .jpg, .jpeg, .png o .webp) -->
       <div class="slides" id="slides" aria-label="Fotos de Ana y Santiago">
@@ -242,6 +241,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
     </div>
     <h1 class="names">Ana &amp; Santiago</h1>
     <div class="divider"><span class="ms">all_inclusive</span></div>
+    <p class="kicker">¡NOS CASAMOS!</p>
     <p class="hero-text">Nos hace mucha ilusión compartir este día con las personas que más queremos.</p>
     <p class="hero-text">En esta web encontraréis toda la información que necesitáis.</p>
     <p class="hero-text">¡Tenemos muchas ganas de celebrarlo juntos!</p>
