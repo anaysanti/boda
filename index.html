@@ -160,11 +160,16 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .list b{color:var(--green)}
 
 /* ---------- Hoteles ---------- */
-.hotel{padding:18px 16px 14px;margin-bottom:14px}
-.hotel h3{font-family:var(--serif);font-weight:600;color:var(--green);font-size:19px;line-height:1.25}
-.hotel .dist{font-size:13px;color:var(--muted);margin:2px 0 0}
-.hotel a{display:flex;justify-content:flex-end;align-items:center;gap:4px;color:var(--rose);font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;margin-top:6px}
-.hotel a .ms{font-size:16px}
+.hotels{padding:6px 18px 4px;margin-top:16px}
+.hotels-group{display:flex;align-items:center;gap:10px;margin:14px 0 2px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.hotels-group::before,.hotels-group::after{content:"";flex:1;height:1px;background:var(--line)}
+.hotels ul{list-style:none}
+.hotels li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.hotels li:last-child{border-bottom:0}
+.hotels h3{font-family:var(--serif);font-weight:500;color:var(--green);font-size:18px;line-height:1.25}
+.hotels li span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.hotels a{display:flex;align-items:center;gap:4px;flex:none;color:var(--green);font-size:13px;text-decoration:none}
+.hotels a .ms{font-size:16px;display:inline-block;margin:0}
 
 /* ---------- Regalo ---------- */
 .gift{padding:30px 16px 20px;text-align:center;background:linear-gradient(180deg,#fff,#f6f3ee)}
@@ -361,41 +366,21 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   <section id="descanso" data-title="Descanso">
     <p class="eyebrow"><span class="ms">bed</span>Descanso</p>
     <h2>Hoteles Recomendados</h2>
-    <article class="card hotel reveal">
-      <h3>Hotel Porcel Aida</h3>
-      <p class="dist">Torrejón de Ardoz</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Porcel+Aida+Torrej%C3%B3n+de+Ardoz" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
-    <article class="card hotel reveal">
-      <h3>Hotel Porcel Avant</h3>
-      <p class="dist">Torrejón de Ardoz</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Porcel+Avant+Torrej%C3%B3n+de+Ardoz" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
-    <article class="card hotel reveal">
-      <h3>Hotel Madrid Torrejón Plaza</h3>
-      <p class="dist">Torrejón de Ardoz</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Madrid+Torrej%C3%B3n+Plaza" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
-    <article class="card hotel reveal">
-      <h3>Hotel Asset Torrejón</h3>
-      <p class="dist">Torrejón de Ardoz</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Asset+Torrej%C3%B3n" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
-    <article class="card hotel reveal">
-      <h3>Hotel Abba Madrid América</h3>
-      <p class="dist">Madrid · Avenida de América</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Abba+Madrid+hotel+Avenida+de+Am%C3%A9rica" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
-    <article class="card hotel reveal">
-      <h3>AC Hotel Avenida de América</h3>
-      <p class="dist">Madrid · Avenida de América</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=AC+Hotel+Avenida+de+Am%C3%A9rica+by+Marriott+Madrid" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
-    <article class="card hotel reveal">
-      <h3>Hotel NH Madrid Zurbano</h3>
-      <p class="dist">Madrid · Castellana</p>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=NH+Madrid+Zurbano" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
-    </article>
+    <div class="card hotels reveal">
+      <p class="hotels-group">Torrejón de Ardoz</p>
+      <ul>
+        <li><div><h3>Hotel Porcel Aida</h3></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Porcel+Aida+Torrej%C3%B3n+de+Ardoz" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+        <li><div><h3>Hotel Porcel Avant</h3></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Porcel+Avant+Torrej%C3%B3n+de+Ardoz" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+        <li><div><h3>Hotel Madrid Torrejón Plaza</h3></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Madrid+Torrej%C3%B3n+Plaza" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+        <li><div><h3>Hotel Asset Torrejón</h3></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Asset+Torrej%C3%B3n" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+      </ul>
+      <p class="hotels-group">Madrid</p>
+      <ul>
+        <li><div><h3>Hotel Abba Madrid América</h3><span>Avenida de América</span></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Abba+Madrid+hotel+Avenida+de+Am%C3%A9rica" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+        <li><div><h3>AC Hotel Avenida de América</h3><span>Avenida de América</span></div><a href="https://www.google.com/maps/search/?api=1&amp;query=AC+Hotel+Avenida+de+Am%C3%A9rica+by+Marriott+Madrid" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+        <li><div><h3>Hotel NH Madrid Zurbano</h3><span>Castellana</span></div><a href="https://www.google.com/maps/search/?api=1&amp;query=NH+Madrid+Zurbano" target="_blank" rel="noopener">Maps <span class="ms">open_in_new</span></a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- NIÑOS -->
