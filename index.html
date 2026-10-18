@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#faf7f2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:wght@400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -40,7 +40,7 @@ header.scrolled{border-color:var(--line)}
 .mono span{position:absolute;font-size:1em}
 .mono .m-a{left:0;top:0}
 .mono .m-s{right:0;bottom:-.06em}
-.mono .m-amp{left:50%;top:52%;transform:translate(-46%,-50%);font-style:italic;font-size:.88em;text-shadow:.03em 0 var(--bg),-.03em 0 var(--bg),0 .03em var(--bg),0 -.03em var(--bg),.03em .03em var(--bg),-.03em -.03em var(--bg),.03em -.03em var(--bg),-.03em .03em var(--bg)}
+.mono .m-amp{left:50%;top:52%;transform:translate(-46%,-50%);font-family:'Cormorant Garamond',Georgia,serif;font-size:.9em;text-shadow:.03em 0 var(--bg),-.03em 0 var(--bg),0 .03em var(--bg),0 -.03em var(--bg),.03em .03em var(--bg),-.03em -.03em var(--bg),.03em -.03em var(--bg),-.03em .03em var(--bg)}
 nav.menu{position:fixed;inset:60px 0 auto 0;z-index:49;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.22s ease}
 nav.menu.open{transform:none;opacity:1;pointer-events:auto}
 nav.menu ul{list-style:none;max-width:480px;margin:0 auto;padding:8px 16px 16px}
@@ -82,6 +82,7 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .bars span.on{background:#fff}
 .count{font-size:11px;font-weight:600;letter-spacing:.12em;white-space:nowrap}
 .hero .date{position:absolute;right:12px;top:12px;background:rgba(255,255,255,.88);color:var(--rose);font-size:11px;font-weight:600;letter-spacing:.12em}
+.amp{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
 .kicker{color:var(--rose);font-size:13px;font-weight:600;letter-spacing:.2em;margin-bottom:14px}
 .names{font-family:var(--serif);font-weight:400;color:var(--green);font-size:42px;line-height:1.15;margin:6px 0 4px}
 .divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--rose);margin-bottom:14px}
@@ -247,7 +248,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
       <button class="nav next" id="nextPhoto" aria-label="Foto siguiente"><span class="ms">chevron_right</span></button>
       <div class="hero-bar"><div class="bars" id="bars"></div><span class="count" id="photoCount"></span></div>
     </div>
-    <h1 class="names">Ana &amp; Santiago</h1>
+    <h1 class="names">Ana <span class="amp">&amp;</span> Santiago</h1>
     <div class="divider"><span class="ms">all_inclusive</span></div>
     <p class="kicker">¡NOS CASAMOS!</p>
     <p class="hero-text">Nos hace mucha ilusión compartir este día con las personas que más queremos.</p>
@@ -417,7 +418,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
 
   <footer>
     <div class="mono mono-lg" aria-hidden="true"><span class="m-a">A</span><span class="m-s">S</span><span class="m-amp">&amp;</span></div>
-    <h3>Ana &amp; Santiago</h3>
+    <h3>Ana <span class="amp">&amp;</span> Santiago</h3>
     <p class="d">01 · 05 · 2027</p>
     <p class="love">Con todo nuestro amor <span class="ms">favorite</span></p>
     <p class="thanks">Gracias por ser parte fundamental de nuestras vidas. ¡Nos vemos muy pronto!</p>
