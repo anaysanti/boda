@@ -71,7 +71,8 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .names{font-family:var(--serif);font-weight:400;color:var(--green);font-size:42px;line-height:1.15;margin:6px 0 4px}
 .divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--rose);margin-bottom:14px}
 .divider::before,.divider::after{content:"";width:70px;height:1px;background:var(--line)}
-.hero-text{color:var(--text);max-width:310px;margin:0 auto}
+.hero-text{color:var(--text);max-width:310px;margin:0 auto 10px}
+.hero-text:last-child{margin-bottom:0}
 
 /* ---------- Save the date ---------- */
 .std{padding:28px 20px 22px;text-align:center}
@@ -165,6 +166,7 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .round.dark{background:var(--green);color:#fff}
 
 /* ---------- Contacto ---------- */
+.kids-text{text-align:center;color:var(--muted);max-width:340px;margin:10px auto 0}
 .contact-text{text-align:center;font-style:italic;color:var(--muted);max-width:340px;margin:0 auto 18px}
 .contact-list{list-style:none;text-align:center;display:grid;gap:10px;font-size:16px;color:var(--text)}
 .contact-list a{text-decoration:none}
@@ -202,6 +204,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
     <li><a href="#escenario"><span class="ms">castle</span>El escenario</a></li>
     <li><a href="#como-llegar"><span class="ms">directions_bus</span>Cómo llegar</a></li>
     <li><a href="#descanso"><span class="ms">bed</span>Descanso</a></li>
+    <li><a href="#ninos"><span class="ms">child_care</span>Niños</a></li>
     <li><a href="#regalo"><span class="ms">redeem</span>Lista de bodas</a></li>
     <li><a href="#contacto"><span class="ms">support_agent</span>Dudas y contacto</a></li>
   </ul>
@@ -219,7 +222,9 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
     </div>
     <h1 class="names">Ana &amp; Santiago</h1>
     <div class="divider"><span class="ms">all_inclusive</span></div>
-    <p class="hero-text">Acompáñanos a celebrar el amor, la vida y el comienzo de nuestra nueva historia.</p>
+    <p class="hero-text">Nos hace mucha ilusión compartir este día con las personas que más queremos.</p>
+    <p class="hero-text">En esta web encontraréis toda la información que necesitáis.</p>
+    <p class="hero-text">¡Tenemos muchas ganas de celebrarlo juntos!</p>
   </section>
 
   <!-- 2 · SAVE THE DATE -->
@@ -370,6 +375,12 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
       <p class="dist">Madrid · Castellana</p>
       <a href="https://www.google.com/maps/search/?api=1&amp;query=NH+Madrid+Zurbano" target="_blank" rel="noopener">Ver en Maps <span class="ms">open_in_new</span></a>
     </article>
+  </section>
+
+  <!-- NIÑOS -->
+  <section id="ninos" data-title="Niños">
+    <h2>Niños</h2>
+    <p class="kids-text">Nos encantan los niños, pero hemos decidido que esta vez la boda sea solo para adultos. ¡Si tenéis alguna circunstancia especial, no dudéis en decírnoslo!</p>
   </section>
 
   <!-- 8 · LISTA DE BODAS -->
