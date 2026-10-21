@@ -83,10 +83,11 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 .count{font-size:11px;font-weight:600;letter-spacing:.12em;white-space:nowrap}
 .hero .date{position:absolute;right:12px;top:12px;background:rgba(255,255,255,.88);color:var(--rose);font-size:11px;font-weight:600;letter-spacing:.12em}
 .amp{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
-.kicker{color:var(--rose);font-size:13px;font-weight:600;letter-spacing:.2em;margin-bottom:14px}
+.kicker{color:var(--rose);font-size:13px;font-weight:600;letter-spacing:.2em;margin-bottom:18px}
 .names{font-family:var(--serif);font-weight:400;color:var(--green);font-size:42px;line-height:1.15;margin:6px 0 4px}
 .divider{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--rose);margin-bottom:14px}
 .divider::before,.divider::after{content:"";width:70px;height:1px;background:var(--line)}
+.hero-line{width:140px;height:1px;background:var(--line);margin:0 auto 22px}
 .hero-text{color:var(--text);max-width:310px;margin:0 auto 10px}
 .hero-text:last-child{margin-bottom:0}
 
@@ -242,6 +243,9 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
 
   <!-- 1 · PORTADA -->
   <section id="portada" data-title="Portada">
+    <h1 class="names">Ana <span class="amp">&amp;</span> Santiago</h1>
+    <div class="divider"><span class="ms">all_inclusive</span></div>
+    <p class="kicker">¡NOS CASAMOS!</p>
     <div class="hero">
       <!-- Fotos del carrusel, en orden. Subirlas a la carpeta img/ (en .jpg, .jpeg, .png o .webp) -->
       <div class="slides" id="slides" aria-label="Fotos de Ana y Santiago">
@@ -255,9 +259,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
       <button class="nav next" id="nextPhoto" aria-label="Foto siguiente"><span class="ms">chevron_right</span></button>
       <div class="hero-bar"><div class="bars" id="bars"></div><span class="count" id="photoCount"></span></div>
     </div>
-    <h1 class="names">Ana <span class="amp">&amp;</span> Santiago</h1>
-    <div class="divider"><span class="ms">all_inclusive</span></div>
-    <p class="kicker">¡NOS CASAMOS!</p>
+    <div class="hero-line"></div>
     <p class="hero-text">Nos hace mucha ilusión compartir este día con las personas que más queremos.</p>
     <p class="hero-text">En esta web encontraréis toda la información que necesitáis.</p>
     <p class="hero-text">¡Tenemos muchas ganas de celebrarlo juntos!</p>
