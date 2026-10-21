@@ -10,6 +10,10 @@
 <meta property="og:description" content="1 de mayo de 2027 · Palacio de Aldovea">
 <meta property="og:image" content="img/pareja.webp">
 <meta name="theme-color" content="#faf7f2">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:wght@400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -196,7 +200,8 @@ h2{font-family:var(--serif);font-weight:400;color:var(--green);text-align:center
 /* ---------- Contacto ---------- */
 .hotels .intro-text{text-align:center;color:var(--muted);font-size:14px;margin:12px 0 0}
 .hotels .intro-text + .hotels-group{margin-top:18px}
-.kids-text{text-align:center;color:var(--muted);max-width:340px;margin:10px auto 0}
+.kids{padding:30px 16px 26px;text-align:center;background:linear-gradient(180deg,#fff,#f6f3ee)}
+.kids-text{color:var(--muted);margin:0}
 .contact-text{text-align:center;font-style:italic;color:var(--muted);max-width:340px;margin:0 auto 18px}
 .contact-list{list-style:none;text-align:center;display:grid;gap:10px;font-size:16px;color:var(--text)}
 .contact-list a{text-decoration:none}
@@ -401,9 +406,11 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   </section>
 
   <!-- NIÑOS -->
-  <section id="ninos" data-title="Niños">
-    <h2>Niños</h2>
-    <p class="kids-text">Nos encantan los niños, pero hemos decidido que esta vez la boda sea solo para adultos. ¡Si tenéis alguna circunstancia especial, no dudéis en decírnoslo!</p>
+  <section id="ninos" data-title="Niños" style="padding-top:24px">
+    <div class="card kids reveal">
+      <h2 style="margin:0 0 14px">Niños</h2>
+      <p class="kids-text">Nos encantan los niños, pero hemos decidido que esta vez la boda sea solo para adultos. ¡Si tenéis alguna circunstancia especial, no dudéis en decírnoslo!</p>
+    </div>
   </section>
 
   <!-- 8 · LISTA DE BODAS -->
