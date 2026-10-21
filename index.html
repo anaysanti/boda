@@ -44,7 +44,8 @@ header.scrolled{border-color:var(--line)}
 .mono span{position:absolute;font-size:1em}
 .mono .m-a{left:0;top:0}
 .mono .m-s{right:0;bottom:-.06em}
-.mono .m-amp{left:50%;top:52%;transform:translate(-46%,-50%);font-family:'Cormorant Garamond',Georgia,serif;font-size:.9em;text-shadow:.03em 0 var(--bg),-.03em 0 var(--bg),0 .03em var(--bg),0 -.03em var(--bg),.03em .03em var(--bg),-.03em -.03em var(--bg),.03em -.03em var(--bg),-.03em .03em var(--bg)}
+.mono .m-amp{left:50%;top:52%;transform:translate(-46%,-50%);font-family:'Cormorant Garamond',Georgia,serif;font-size:.9em}
+.mono .m-amp::before{content:"&";position:absolute;left:0;top:0;z-index:-1;color:var(--bg);-webkit-text-stroke:.14em var(--bg)}
 nav.menu{position:fixed;inset:60px 0 auto 0;z-index:49;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.22s ease}
 nav.menu.open{transform:none;opacity:1;pointer-events:auto}
 nav.menu ul{list-style:none;max-width:480px;margin:0 auto;padding:8px 16px 16px}
