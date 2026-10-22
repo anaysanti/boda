@@ -46,7 +46,7 @@ header.scrolled{border-color:var(--line)}
 .mono .m-a{left:0;top:0}
 .mono .m-s{right:0;bottom:-.06em}
 .mono .m-amp{left:50%;top:52%;transform:translate(-46%,-50%);font-family:'Cormorant Garamond',Georgia,serif;font-size:.9em}
-.mono .m-amp::before{content:"&";position:absolute;left:0;top:0;z-index:-1;color:var(--bg);-webkit-text-stroke:.14em var(--bg)}
+.mono .m-halo{left:50%;top:52%;transform:translate(-46%,-50%);font-family:'Cormorant Garamond',Georgia,serif;font-size:.9em;color:var(--bg);-webkit-text-stroke:.14em var(--bg)}
 nav.menu{position:fixed;inset:60px 0 auto 0;z-index:49;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.22s ease}
 nav.menu.open{transform:none;opacity:1;pointer-events:auto}
 nav.menu ul{list-style:none;max-width:480px;margin:0 auto;padding:8px 16px 16px}
@@ -227,7 +227,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
 <header id="top">
   <div class="bar">
     <button class="icon-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span class="ms">menu</span></button>
-    <a class="mono home-link" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
+    <a class="mono home-link" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-halo" aria-hidden="true">&amp;</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
   </div>
 </header>
 
@@ -432,7 +432,7 @@ footer .thanks{font-size:13px;color:var(--muted);max-width:260px;margin:0 auto}
   </section>
 
   <footer>
-    <a class="mono mono-lg home-link" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
+    <a class="mono mono-lg home-link" href="./" aria-label="Volver al inicio"><span class="m-a" aria-hidden="true">A</span><span class="m-halo" aria-hidden="true">&amp;</span><span class="m-s" aria-hidden="true">S</span><span class="m-amp" aria-hidden="true">&amp;</span></a>
     <h3>Ana <span class="amp">&amp;</span> Santiago</h3>
     <p class="d">01 · 05 · 2027</p>
     <p class="love">Con todo nuestro amor <span class="ms">favorite</span></p>
